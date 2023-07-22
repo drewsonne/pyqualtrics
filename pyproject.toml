@@ -8,6 +8,9 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 
+[tool.poetry.scripts]
+qualtrics = 'pyqualtrics_cli.cli:main'
+build-qualtrics-library = 'pyqualtrics_build.cli:main'
 
 [build-system]
 requires = ["poetry-core"]
